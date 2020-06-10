@@ -4,17 +4,17 @@ using System.Collections.Generic;
 using Moq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-using Refactored.Core.Services;
-using Refactored.Data.Repositories;
+using ProductMicroservice.Core.Services;
+using ProductMicroservice.Data.Repositories;
 using Microsoft.Extensions.Configuration;
-using RefactoredThat.Controllers;
+using ProductMicroservice.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using Refactored.Contracts.Models;
+using ProductMicroservice.Contracts.Models;
 using System;
-using Refactored.API.Models;
+using ProductMicroservice.API.Models;
 
-namespace Refactored.IntegrationTests
+namespace ProductMicroservice.IntegrationTests
 {
     // Integration tests design to test round trip to a live database. 
     public class ProductTests : TestBase

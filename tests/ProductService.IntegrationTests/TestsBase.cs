@@ -4,16 +4,16 @@ using System.Collections.Generic;
 using Moq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-using Refactored.Core.Services;
-using Refactored.Data.Repositories;
+using ProductMicroservice.Core.Services;
+using ProductMicroservice.Data.Repositories;
 using Microsoft.Extensions.Configuration;
-using RefactoredThat.Controllers;
+using ProductMicroservice.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using Refactored.Contracts.Models;
+using ProductMicroservice.Contracts.Models;
 using System;
 
-namespace Refactored.IntegrationTests
+namespace ProductMicroservice.IntegrationTests
 {
     public class TestBase
     {
@@ -26,7 +26,7 @@ namespace Refactored.IntegrationTests
                 .AddInMemoryCollection(new[] { new KeyValuePair<string, string>("ConnectionString", "Data Source=../../../TestDatabase/products.db") })
               .Build();
 
-            Refactored.API.Mappers.DapperMappers.Config();
+            ProductMicroservice.API.Mappers.DapperMappers.Config();
 
             var productRepository = new ProductRepository(configuration);
             var productOptionRepository = new ProductOptionRepository(configuration);

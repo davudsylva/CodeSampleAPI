@@ -1,10 +1,10 @@
-﻿using Refactored.Contracts.Models;
+﻿using ProductMicroservice.Contracts.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Refactored.API.Models
+namespace ProductMicroservice.API.Models
 {
     public class Products
     {

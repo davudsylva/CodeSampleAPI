@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
-using Refactored.API.Models;
+using ProductMicroservice.API.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace Refactored.API.Filters
+namespace ProductMicroservice.API.Filters
 {
     public class ExceptionFilter : IExceptionFilter
     {

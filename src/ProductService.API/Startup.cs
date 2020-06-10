@@ -11,11 +11,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Refactored.API.Filters;
-using Refactored.Core.Services;
-using Refactored.Data.Repositories;
+using ProductMicroservice.API.Filters;
+using ProductMicroservice.Core.Services;
+using ProductMicroservice.Data.Repositories;
 
-namespace RefactoredThat
+namespace ProductMicroservice
 {
     public class Startup
     {
@@ -44,7 +44,7 @@ namespace RefactoredThat
                 }
             );
 
-            Refactored.API.Mappers.DapperMappers.Config();
+            ProductMicroservice.API.Mappers.DapperMappers.Config();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

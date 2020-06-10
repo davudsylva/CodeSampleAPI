@@ -1,11 +1,11 @@
-﻿using Refactored.Contracts.Models;
+﻿using ProductMicroservice.Contracts.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Refactored.Core.Services
+namespace ProductMicroservice.Core.Services
 {
     public interface IProductValidator
     {

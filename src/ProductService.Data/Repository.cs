@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Refactored.Data
+namespace ProductMicroservice.Data
 {
     public class Class1
     {

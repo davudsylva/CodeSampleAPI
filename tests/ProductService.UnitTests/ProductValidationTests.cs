@@ -1,8 +1,8 @@
 using System;
 using Xunit;
-using Refactored.Core.Services;
+using ProductMicroservice.Core.Services;
 
-namespace Refactored.UnitTests
+namespace ProductMicroservice.UnitTests
 {
     public class ProductValidationTests
     {
@@ -27,7 +27,7 @@ namespace Refactored.UnitTests
         {
             var validator = new ProductValidator();
 
-            var result = validator.ValidateProduct(new Contracts.Models.Product() { Description = "Banana" });
+            var result = validator.ValidateProduct(new Contracts.Models.Product() { Description = "Banana", Name="B1" });
 
             Assert.True(result.isOk);
         }

@@ -1,13 +1,13 @@
 using System;
 using Xunit;
 using Moq;
-using Refactored.Core.Services;
-using Refactored.Data.Repositories;
+using ProductMicroservice.Core.Services;
+using ProductMicroservice.Data.Repositories;
 using System.Collections.Generic;
-using Refactored.Contracts.Models;
+using ProductMicroservice.Contracts.Models;
 using System.Threading.Tasks;
 
-namespace Refactored.UnitTests
+namespace ProductMicroservice.UnitTests
 {
     public class ProductPostTests
     {

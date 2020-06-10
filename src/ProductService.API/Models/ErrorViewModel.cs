@@ -1,6 +1,6 @@
 using System;
 
-namespace RefactoredThat.Models
+namespace ProductMicroservice.Models
 {
     public class ErrorViewModel
     {

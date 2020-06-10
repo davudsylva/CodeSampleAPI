@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Refactored.Contracts.Models
+namespace ProductMicroservice.Contracts.Models
 {
     public class Product
     {

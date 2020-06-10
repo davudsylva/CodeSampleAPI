@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Refactored.API.Models;
-using Refactored.Contracts.Models;
-using Refactored.Core.Services;
-using RefactoredThat.Models;
+using ProductMicroservice.API.Models;
+using ProductMicroservice.Contracts.Models;
+using ProductMicroservice.Core.Services;
+using ProductMicroservice.Models;
 
-namespace RefactoredThat.Controllers
+namespace ProductMicroservice.Controllers
 {
     /// <summary>
     /// Operations to manage products andthier associated options.

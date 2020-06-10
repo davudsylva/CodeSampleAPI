@@ -1,12 +1,12 @@
 ﻿using Dapper;
-using Refactored.Contracts.Models;
+using ProductMicroservice.Contracts.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 
-namespace Refactored.Data.Repositories
+namespace ProductMicroservice.Data.Repositories
 {
     public class ProductOptionRepository: Repository, IProductOptionRepository
     {
