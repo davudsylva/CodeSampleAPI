@@ -18,6 +18,6 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\$(Configuration)\Refactored.API.xml</DocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\ProductService.API.xml</DocumentationFile>
   </PropertyGroup>
 </Project>
