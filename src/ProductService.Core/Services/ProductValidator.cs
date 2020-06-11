@@ -1,9 +1,5 @@
 ﻿using ProductMicroservice.Contracts.Models;
-using ProductMicroservice.Data.Repositories;
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProductMicroservice.Core.Services
 {

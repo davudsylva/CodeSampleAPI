@@ -1,15 +1,7 @@
 using Xunit;
 using System.Linq;
-using System.Collections.Generic;
-using Moq;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
-using ProductMicroservice.Core.Services;
-using ProductMicroservice.Data.Repositories;
-using Microsoft.Extensions.Configuration;
-using ProductMicroservice.Controllers;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using ProductMicroservice.Contracts.Models;
 using System;
 using ProductMicroservice.API.Models;

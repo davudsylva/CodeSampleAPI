@@ -3,7 +3,6 @@ using Xunit;
 using Moq;
 using ProductMicroservice.Core.Services;
 using ProductMicroservice.Data.Repositories;
-using System.Collections.Generic;
 using ProductMicroservice.Contracts.Models;
 using System.Threading.Tasks;
 
