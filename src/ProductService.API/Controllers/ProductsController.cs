@@ -96,7 +96,7 @@ namespace ProductMicroservice.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> UpdateProduct(Guid id, Product product)
         {
-            var existingProduct = await _productService.GetById(id);
+            var existingProduct = await _productService.GetById(product.Id);
             if (existingProduct == null)
             {
                 return NotFound();
