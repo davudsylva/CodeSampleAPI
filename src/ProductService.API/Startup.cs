@@ -33,6 +33,11 @@ namespace ProductMicroservice
             services.AddScoped<IProductOptionRepository, ProductOptionRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductValidator, ProductValidator>();
+            services.AddApiVersioning(o =>
+            {
+                o.ReportApiVersions = true;
+            });
+
 
             services.AddSwaggerGen(c =>
                 {
@@ -71,7 +76,7 @@ namespace ProductMicroservice
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Campaign Api");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Product Api");
             });
 
             app.UseEndpoints(endpoints =>

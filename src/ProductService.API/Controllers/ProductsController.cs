@@ -9,16 +9,16 @@ using Microsoft.Extensions.Logging;
 using ProductMicroservice.API.Models;
 using ProductMicroservice.Contracts.Models;
 using ProductMicroservice.Core.Services;
-using ProductMicroservice.Models;
 
 namespace ProductMicroservice.Controllers
 {
     /// <summary>
     /// Operations to manage products andthier associated options.
     /// </summary>
-    [ApiController]
-    [Route("[controller]")]
+    [ApiVersion("1")]
+    [Route("v{version:apiVersion}/[controller]")]
     [Produces("application/json")]
+    [ApiController]
     public class ProductsController : Controller
     {
 
